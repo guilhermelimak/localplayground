@@ -19,7 +19,8 @@ const printNpmScripts = () => {
 
 const cloneBoilerplate = async () => {
   try {
-    await exec(`git clone --depth=1 --branch=${branch} ${repo} . && rm -rf !$/.git`)
+    await exec(`git clone --depth=1 --branch=${branch} ${repo} .`)
+    await exec(`rm -rf ./.git`)
     log(chalk.green.bold('Boilerplate downloaded!'))
     log(`You can now write your code on the src/ folder.`)
     log()
