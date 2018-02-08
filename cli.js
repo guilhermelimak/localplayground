@@ -26,6 +26,7 @@ const cloneBoilerplate = async () => {
     log()
     log(chalk.bold(`Available npm scripts:`))
     printNpmScripts()
+    log()
   } catch (e) {
     log(chalk.red.bold(e))
   }
