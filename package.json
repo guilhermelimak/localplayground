@@ -1,0 +1,32 @@
+{
+  "name": "localplayground",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint --ext .js ./src/",
+    "format": "prettier --write ./src/**.*.js"
+  },
+  "bin": {
+    "newplayground": "./cli.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.2.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.7.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^22.2.1",
+    "prettier": "^1.10.2",
+    "pretty-cli": "^0.0.14",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0"
+  },
+  "version": "0.0.1"
+}
